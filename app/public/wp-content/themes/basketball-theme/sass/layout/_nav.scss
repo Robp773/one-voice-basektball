@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    background: $color-primary;
+    justify-content: center;
+    padding: 2rem 0;
+    border-bottom: 5px solid $color-secondary;
+    color: whitesmoke;
+    &__ul{
+        
+    }
+    &__li{
+        list-style: none;
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0 .5rem;
+    }
+}

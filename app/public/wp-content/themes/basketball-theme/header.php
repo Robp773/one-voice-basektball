@@ -10,6 +10,15 @@
 
     <body <?php body_class(); ?> >
 
-    <header class="site-header">
-        <h1>One Voice Basketball</h1>
-    </header>
+    <nav class='nav'>
+
+        <ul class='nav__ul'>
+            <li class="nav__li">About</li>
+            <li class="nav__li">Drills</li>
+            <li class="nav__li">Forms</li>
+            <li class="nav__li">Calendar</li>
+            <li class="nav__li">Stores</li>
+            <li class="nav__li">Notes</li>
+        </ul>
+    
+    </nav>
