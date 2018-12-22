@@ -1,0 +1,101 @@
+.intro {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__h1 {
+        color: whitesmoke;
+        font-size: 8rem;
+        width: fit-content;
+        z-index: 9999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__bg-image {
+        transform: scale(1.05);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-image: url("/wp-content/themes/basketball-theme/images/background.jpg ");
+        filter: blur(7px);
+    }
+
+    &__darken {
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding: 5rem 0;
+    background: $color-tertiary;
+    border-top: 3px solid $color-secondary;
+    border-bottom: 3px solid $color-secondary;
+
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    &__snippet {
+        font-size: 2.5rem;
+        margin: 2rem auto;
+        max-width: 75ch;
+        font-style: italic;
+    }
+
+    &__learn-more {
+        color: whitesmoke;
+        border: 0;
+        font-weight: bold;
+        padding: 2rem 3rem;
+        font-size: 2.5rem;
+        width: fit-content;
+        border-radius: 100px;
+        background: $color-primary;
+    }
+}
+
+.updates {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    background: $color-primary;
+    color: whitesmoke;
+
+    &__heading {
+        font-size: 5rem;
+    }
+
+    &__content {
+        font-size: 2rem;
+    }
+}

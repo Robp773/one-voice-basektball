@@ -1,17 +1,21 @@
 .nav {
-    display: flex;
+    display: flex;  
     background: $color-primary;
     justify-content: center;
-    padding: 2rem 0;
-    border-bottom: 5px solid $color-secondary;
+    padding: 2rem 0; 
     color: whitesmoke;
-    &__ul{
-        
-    }
-    &__li{
+    border-bottom: 3px solid $color-secondary;
+    
+    &__li {
+        font-weight: bold;
         list-style: none;
         display: inline-block;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin: 0 .5rem;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-bottom: 3px solid whitesmoke;
+        }
     }
 }
