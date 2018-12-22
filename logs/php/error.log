@@ -1,0 +1,12 @@
+[20-Dec-2018 00:31:12 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[20-Dec-2018 00:31:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[20-Dec-2018 00:34:24 UTC] PHP Parse error:  syntax error, unexpected ''labels'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[20-Dec-2018 00:36:25 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[20-Dec-2018 00:36:45 UTC] PHP Parse error:  syntax error, unexpected ''labels'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[20-Dec-2018 00:36:47 UTC] PHP Parse error:  syntax error, unexpected ''labels'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 22
+[21-Dec-2018 21:34:50 UTC] PHP Fatal error:  Cannot redeclare ovb_post_types() (previously declared in /app/public/wp-content/mu-plugins/ovb_post_types.php:5) in /app/public/wp-content/themes/basketball-theme/functions.php on line 19
+[21-Dec-2018 21:42:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
+[21-Dec-2018 21:42:42 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
+[21-Dec-2018 21:42:55 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
+[21-Dec-2018 21:43:07 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
+[21-Dec-2018 21:45:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/basketball-theme/front-page.php on line 22
