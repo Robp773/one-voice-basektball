@@ -1,0 +1,38 @@
+.drills-list {
+  &__drill-parent {
+    margin: 1rem auto;
+    padding-top: 1rem;
+    border-top: 3px solid $color-secondary;
+
+    &:last-child {
+      border-bottom: 3px solid $color-secondary;
+    }
+  }
+
+  &__title-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    & > div {
+      margin-left: 1rem;
+      color: $color-primary;
+    }
+  }
+
+  &__tag {
+    margin: auto 0.5rem;
+  }
+}
+
+.warm-ups {
+  text-align: center;
+  border: 3px dashed $color-tertiary;
+  padding: 3rem;
+  background: rgba(246, 220, 58, 0.6);
+  &__single-warm-up {
+    padding: 1rem;
+    // border-top: 3px solid $color-tertiary;
+  }
+}

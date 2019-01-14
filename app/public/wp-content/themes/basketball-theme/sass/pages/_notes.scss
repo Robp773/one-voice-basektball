@@ -1,0 +1,23 @@
+.notes {}
+
+.note {
+    transition: .5s;
+    border: 3px solid transparent;
+
+    &:hover {
+
+        border: 3px solid $color-tertiary;
+        background: rgba(246, 220, 58, .6);
+    }
+
+    &__date {
+        text-align: center;
+    }
+
+    &__link{
+        text-decoration: none;
+        display: inline-block;  
+        padding: 2rem; 
+    }
+
+}

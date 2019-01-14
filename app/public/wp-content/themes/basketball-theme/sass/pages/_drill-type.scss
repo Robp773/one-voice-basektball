@@ -1,0 +1,63 @@
+.drill-types {
+   
+
+    &__intro {
+
+        &>span {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__five-points {
+        margin: 3rem auto;
+
+
+        & * ul {
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+
+    &__ul-parent {        
+        background: rgba(246, 220, 58, .6);
+        padding: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__parent{
+        margin: 3rem auto;
+    }
+}
+
+.drill-type {
+    margin: auto;
+    transition: 0.5s all;
+    padding: 1rem 0;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+
+    &:hover {
+        background: rgba(255, 255, 255, 1);
+        border-right: 3px solid $color-primary;
+        border-left: 3px solid $color-primary;
+    }
+
+    &__title {
+        color: $color-primary;
+        font-size: 4rem;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 2rem;
+        max-width: 75ch;
+        margin: 1rem auto;
+        color: $color-tertiary;
+    }
+}

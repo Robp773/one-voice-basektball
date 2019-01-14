@@ -20,25 +20,23 @@
 
 <div class="updates">
 
-   <?php 
-          $homepageEvents = new WP_Query(array(
-            'post_type' => 'drill',
-            )
-          );
+    <h2 class='updates__primary-heading'>News</h2>
+    <div class="updates__posts-parent">
+        <?php 
+            $homepageEvents = new WP_Query(array(
+                'post_type' => 'note',
+                )
+            );
 
-          while($homepageEvents->have_posts()) {
-            $homepageEvents->the_post(); ?>
-            <div class="updates__container">
-                <h2 class='updates__heading'><?php the_title(); ?></h2>
-                <div class='updates__content'><?php the_excerpt();?></div>
-            </div>
-        
-          <?php } ?> 
-
-    <!-- <h2 class="updates__heading">Whats New</h2> -->
-    <!-- <div class="updates__placeholder">Update One</div>
-    <div class="updates__placeholder">Update Two</div>
-    <div class="updates__placeholder">Update Three</div> -->
+            while($homepageEvents->have_posts()) {
+                $homepageEvents->the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="updates__container">
+                    <h2 class='updates__heading'><?php the_title(); ?></h2>
+                    <div class='updates__date'><?php echo get_the_date(); ?></div>
+                    <div class='updates__content'><?php the_excerpt();?></div>
+                </a>
+        <?php } ?> 
+        </div>
 </div>
 
 <?php get_footer() ?>

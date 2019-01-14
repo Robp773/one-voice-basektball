@@ -4,9 +4,50 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  color: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+@media print {
+
+  .form-page__form{
+    width: 100% !important;
+    border: 0 !important;
+  }
+
+  .nav ,
+  .footer,
+  #print-btn {
+    display: none !important;
+  }
+
+  .form-page__label-input * {
+    width: 100% !important;
+  }
+  .form-page__paragraph{
+    width: 95% !important;
+  }
+  .form-page__medical-reason-input{
+    width: 100% !important;
+  }
+
+  #headerImg {
+    height: 15vh;
+  }
+
+  .page-break {
+    margin-top: 30rem !important;
+  }
+  .page-break-2{
+    margin-top: 5rem !important;
+  }
 }
 
 html {
+  background: whitesmoke;
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 
@@ -26,7 +67,7 @@ html {
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   box-sizing: border-box;
   // background: whitesmoke;
   color: #515151;
@@ -34,4 +75,86 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.page {
+  &__bg {
+    padding: 2rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+    &--right {
+      background-position: right;
+    }
+  }
+
+  &__thumbnail-container {
+    text-align: center;
+  }
+
+  &__title-date-container {
+    margin: 2.5rem auto;
+  }
+
+  &__content {
+    max-width: 85ch;
+    font-size: 2.25rem;
+    background: whitesmoke;
+    margin: auto;
+    padding: 1rem 3rem;
+    line-height: 135%;
+
+    & * ul {
+      margin: auto auto 2rem auto;
+      max-width: 60ch;
+    }
+
+    & * p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__h1 {
+    text-align: center;
+    font-size: 6rem;
+    color: $color-tertiary;
+    margin: 2rem;
+  }
+
+  &__h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: $color-primary;
+    margin: 1.25rem;
+  }
+
+  &__h3 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 3px solid $color-primary;
+    width: fit-content;
+    margin: 1rem auto;
+
+    &--top-margin {
+      margin-top: 5rem;
+    }
+  }
+
+  &__h4 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0.75rem;
+  }
+
+  &__paragraph {
+    margin-bottom: 2rem;
+  }
+}
+
+.border-top {
+  border-top: 3px solid $color-secondary;
 }

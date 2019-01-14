@@ -1,0 +1,86 @@
+.form-page {
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        background: white;
+        border: 3px solid black;
+        padding: 1rem;
+        width: 95%;
+        margin: 1rem auto;
+
+        &>fieldset {
+            border: 0;
+        }
+    }
+
+    &__logo {
+        width: 40%;
+        height: 20vh;
+        padding: 1rem;
+    }
+
+    &__label-input {
+        text-align: center;
+        margin: auto;
+        display: inline-block;
+        width: 49%;
+        padding: .25rem 0;
+        font-size: 1.75rem;
+
+        &>label {
+            display: block;
+        }
+
+        &>input {
+            text-align: center;
+            width: 50%;
+            padding: 1rem;
+        }
+    }
+
+    &__label-radio {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        width: 75%;
+        margin: 1rem auto;
+    }
+
+    &__medical-reason-input {
+        width: 75%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__print-btn {
+        display: block;
+        font-size: 3rem;
+        padding: .25rem 2rem;
+        margin: auto;
+        cursor: pointer;
+        background: $color-primary;
+        color: whitesmoke;
+        border: 2px solid $color-tertiary;
+        box-shadow: 0 .5rem 2rem $color-tertiary;
+        transition: .25s all;
+
+        &:hover {
+            background: white;
+            color: $color-tertiary;
+            border: 2px solid $color-primary;
+        }
+
+        &:active {
+            box-shadow: none;
+
+        }
+    }
+
+}

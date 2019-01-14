@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid $color-secondary;
 
     &__h1 {
         color: whitesmoke;
@@ -46,12 +47,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    // color: whitesmoke;
     padding: 5rem 0;
-    background: $color-tertiary;
-    border-top: 3px solid $color-secondary;
-    border-bottom: 3px solid $color-secondary;
-
+    background: whitesmoke;
+    // background: $color-tertiary;
+    // border-top: 3px solid $color-secondary;
+    // border-bottom: 3px solid $color-secondary;
+    // border-bottom: 3px solid $color-secondary;
 
     &__content {
         display: flex;
@@ -74,28 +76,80 @@
 
     &__learn-more {
         color: whitesmoke;
-        border: 0;
         font-weight: bold;
         padding: 2rem 3rem;
         font-size: 2.5rem;
         width: fit-content;
+        outline: none;
         border-radius: 100px;
         background: $color-primary;
     }
 }
 
 .updates {
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem 0;
+    padding-top: 5rem;
     background: $color-primary;
-    color: whitesmoke;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%, );
+    border-top: 2px solid $color-secondary;
+    border-bottom: 2px solid $color-secondary;
+    margin-top: -3%;
+
+
+    &__primary-heading {
+        // background: whitesmoke;
+        color: whitesmoke;
+        font-size: 6.5rem;
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__posts-parent {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding: 3rem 0;
+        text-decoration: none;
+        color: whitesmoke;
+        transition: all .25s;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-top: 5px solid transparent;
+        transition: .5s all;
+
+        &:hover {
+            background: whitesmoke;
+            color: $color-tertiary;
+            border-right: 2px solid $color-secondary;
+            border-left: 2px solid $color-secondary;
+            border-top: 2px solid $color-secondary;
+            transform: scale(1.1);
+
+        }
+
+        &:hover>h2 {}
+    }
 
     &__heading {
         font-size: 5rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    &__date {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
 
     &__content {
+        display: block;
+        padding: 0 1rem;
         font-size: 2rem;
     }
 }

@@ -1,0 +1,38 @@
+.u-underline {
+    text-decoration: underline;
+    width: fit-content;
+    display: inline-block;
+    text-decoration-color: $color-primary;
+}
+
+.u-emphasize {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.u-primary-color {
+    color: $color-primary;
+}
+
+.u-emphasize {
+    font-weight: bold;
+    text-align: center;
+}
+
+.u-ital {
+    font-style: italic;
+}
+
+.u-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-standardize-content {
+    font-size: 2.25rem;
+}
+
+.u-inline-block{
+    display: inline-block;
+}

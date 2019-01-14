@@ -10,3 +10,218 @@
 [21-Dec-2018 21:42:55 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
 [21-Dec-2018 21:43:07 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/front-page.php on line 46
 [21-Dec-2018 21:45:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/basketball-theme/front-page.php on line 22
+[23-Dec-2018 01:06:05 UTC] PHP Warning:  Error while sending QUERY packet. PID=117 in /app/public/wp-includes/wp-db.php on line 1924
+[26-Dec-2018 21:16:29 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[26-Dec-2018 21:16:47 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[26-Dec-2018 21:20:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/page.php on line 8
+[26-Dec-2018 21:20:43 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/page.php on line 10
+[26-Dec-2018 21:21:34 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/page.php on line 10
+[28-Dec-2018 20:57:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 24
+[28-Dec-2018 21:06:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 26
+[28-Dec-2018 21:07:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 39
+[28-Dec-2018 21:13:12 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:13:12 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:13:42 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:13:42 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:14:02 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:33
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:14:45 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:33
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:14:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function post() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:33
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:15:12 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:15:12 UTC] PHP Warning:  Use of undefined constant var_dump - assumed 'var_dump' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:15:20 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:33
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:16:05 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 33
+[28-Dec-2018 21:20:36 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 25
+[28-Dec-2018 21:20:54 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 25
+[28-Dec-2018 21:21:24 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 26
+[28-Dec-2018 21:32:58 UTC] PHP Parse error:  syntax error, unexpected '$relevantDrills' (T_VARIABLE), expecting ',' or ';' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 25
+[28-Dec-2018 21:36:23 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 40
+[28-Dec-2018 21:40:24 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 40
+[28-Dec-2018 21:40:24 UTC] PHP Warning:  var_dump() expects at least 1 parameter, 0 given in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 40
+[28-Dec-2018 21:43:31 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 40
+[28-Dec-2018 21:44:25 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 40
+[28-Dec-2018 21:52:40 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 42
+[28-Dec-2018 21:52:51 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 42
+[28-Dec-2018 21:56:19 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 42
+[28-Dec-2018 22:42:36 UTC] PHP Recoverable fatal error:  Object of class WP_Post could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 43
+[28-Dec-2018 22:45:03 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[28-Dec-2018 22:45:55 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[28-Dec-2018 22:45:59 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[28-Dec-2018 22:47:16 UTC] PHP Recoverable fatal error:  Object of class WP_Term could not be converted to string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[28-Dec-2018 22:50:05 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:41
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[28-Dec-2018 22:50:15 UTC] PHP Fatal error:  Uncaught Error: Function name must be a string in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:41
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[29-Dec-2018 22:40:04 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 39
+[29-Dec-2018 23:09:30 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:39
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 39
+[29-Dec-2018 23:10:58 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 42
+[29-Dec-2018 23:11:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 41
+[29-Dec-2018 23:13:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function printr() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:45
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 45
+[29-Dec-2018 23:14:55 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:44
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 44
+[29-Dec-2018 23:17:14 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 44
+[29-Dec-2018 23:17:52 UTC] PHP Parse error:  syntax error, unexpected ''name'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 44
+[29-Dec-2018 23:18:08 UTC] PHP Parse error:  syntax error, unexpected '"name"' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 44
+[29-Dec-2018 23:22:21 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Term as array in /app/public/wp-content/themes/basketball-theme/single-drill-type.php:45
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 45
+[29-Dec-2018 23:31:56 UTC] PHP Parse error:  syntax error, unexpected ''compare'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 38
+[29-Dec-2018 23:37:34 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 47
+[29-Dec-2018 23:51:57 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 25
+[29-Dec-2018 23:52:26 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 26
+[29-Dec-2018 23:53:01 UTC] PHP Parse error:  syntax error, unexpected '$relevantDrills' (T_VARIABLE) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 24
+[29-Dec-2018 23:55:02 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 23
+[29-Dec-2018 23:55:09 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_term_by(), 1 passed in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 23 and at least 2 expected in /app/public/wp-includes/taxonomy.php:860
+Stack trace:
+#0 /app/public/wp-content/themes/basketball-theme/single-drill-type.php(23): get_term_by('name')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-includes/taxonomy.php on line 860
+[30-Dec-2018 19:41:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php on line 5
+[30-Dec-2018 19:42:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php on line 5
+[30-Dec-2018 19:42:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php on line 5
+[30-Dec-2018 19:42:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php on line 5
+[30-Dec-2018 19:42:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/basketball-theme/archive-drill-type.php on line 5
+[31-Dec-2018 19:32:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 63
+[01-Jan-2019 17:31:01 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/basketball-theme/archive-note.php on line 9
+[01-Jan-2019 18:01:18 UTC] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:02:09 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:02:31 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:17:24 UTC] PHP Parse error:  syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:18:07 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:18:16 UTC] PHP Parse error:  syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:18:26 UTC] PHP Parse error:  syntax error, unexpected ''label'' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:18:34 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:48:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:49:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 98
+[01-Jan-2019 18:53:14 UTC] PHP Parse error:  syntax error, unexpected 'compare' (T_STRING), expecting ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 39
+[01-Jan-2019 18:57:53 UTC] PHP Parse error:  syntax error, unexpected 'value' (T_STRING), expecting ',' or ')' in /app/public/wp-content/themes/basketball-theme/functions.php on line 34
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'value' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 88
+[01-Jan-2019 22:29:36 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:30:51 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:31:03 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 22:31:03 UTC] PHP Warning:  Illegal string offset 'label' in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 102
+[01-Jan-2019 23:00:29 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /app/public/wp-content/themes/basketball-theme/single-drill-type.php on line 192
+[03-Jan-2019 17:29:59 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[03-Jan-2019 17:32:05 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[03-Jan-2019 17:32:48 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[13-Jan-2019 20:33:44 UTC] PHP Warning:  fopen(/app/public/wp-content/plugins/the-events-calendar/the-events-calendar.php): failed to open stream: No such file or directory in /app/public/wp-includes/functions.php on line 4918
+[13-Jan-2019 20:33:44 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /app/public/wp-includes/functions.php on line 4921
+[13-Jan-2019 20:33:44 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /app/public/wp-includes/functions.php on line 4924

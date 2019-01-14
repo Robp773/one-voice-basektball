@@ -1,13 +1,23 @@
 <?php
 
 function ovb_post_types() {
-  // event post type
-  register_post_type('drill', array(
-    'supports' => array(
-      'title',
-      'editor',
-      'excerpt',
+  register_post_type('drill-type', array(
+    'supports' => array('title'),
+    'rewrite' => array('slug' => 'drill-types'),
+    'has_archive' => true,
+    'public' => true,
+    'labels' => array(
+      'name' => 'Drill Types',
+      'add_new_item' => 'Add New Drill Type',
+      'edit_item' => 'Edit Drill Type',
+      'all_items' => 'All Drill Types',
+      'singular_name' => 'Drill Type',
     ),
+    'menu_icon' => 'dashicons-book-alt'
+  ));
+
+  register_post_type('drill', array(
+    'supports' => array('title'),
     'rewrite' => array('slug' => 'drills'),
     'has_archive' => true,
     'public' => true,
@@ -16,7 +26,7 @@ function ovb_post_types() {
       'add_new_item' => 'Add New Drill',
       'edit_item' => 'Edit Drill',
       'all_items' => 'All Drills',
-      'singular_name' => 'Drill'
+      'singular_name' => 'Drill',
     ),
     'menu_icon' => 'dashicons-clipboard'
   ));
