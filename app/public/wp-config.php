@@ -28,7 +28,7 @@
  else{
 	define( 'DB_NAME', 'onevoif0_ovb-data' );
 	define( 'DB_USER', 'onevoif0_02ee_cg' );
-	define( 'DB_PASSWORD', '1ovb2424' );
+	define( 'DB_PASSWORD', 'ovb2424' );
 	define( 'DB_HOST', 'localhost' );
  }
 
@@ -66,9 +66,6 @@ define( 'DB_COLLATE', '' );
  */
 $table_prefix = 'wp_';
 
-
-
-
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -77,3 +74,9 @@ if ( ! defined( 'ABSPATH' ) )
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+@ini_set( 'upload_max_filesize' , '128M' );
+@ini_set( 'post_max_size', '128M');
+@ini_set( 'memory_limit', '256M' );
+@ini_set( 'max_execution_time', '300' );
+@ini_set( 'max_input_time', '300' );
