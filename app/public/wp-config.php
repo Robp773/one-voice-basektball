@@ -17,22 +17,11 @@
  *
  * @package WordPress
  */
-
- if(file_exists(dirname(__FILE__) . '/local.php')) {
+ 
 	define( 'DB_NAME', 'local' );
 	define( 'DB_USER', 'root' );
 	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
- }
-
- else{
-	define( 'DB_NAME', 'onevoif0_ovb-data' );
-	define( 'DB_USER', 'onevoif0_02ee_cg' );
-	define( 'DB_PASSWORD', 'ovb2424' );
-	define( 'DB_HOST', 'localhost' );
- }
-
-
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

@@ -1,11 +1,18 @@
-jQuery(document).ready(function($) {
-  $("#print-btn").on("click", function(e) {
-    e.preventDefault();
-    print();
-  });
+jQuery(document).ready(function ($) {
+  let currentImg;
+  $('.store__item-image').on('click', function (e) {
+    $('.page__modal-bg').removeClass('hidden');
+    currentImg = e.currentTarget.dataset.imgName;
+    $(`#${currentImg}`).removeClass('hidden');
+  })
+
+  $('.page__modal-bg').on('click', function () {
+    $('.page__modal-bg').addClass('hidden');
+    $(`#${currentImg}`).addClass('hidden');
+  })
 
   // changing hat picture to match user color selection
-  $("#hat-color").change(function(e) {
+  $("#hat-color").change(function (e) {
     if (e.target.value === "Black") {
       $("#white-hat").addClass("hidden");
       $("#black-hat").removeClass("hidden");
@@ -17,7 +24,7 @@ jQuery(document).ready(function($) {
 
   let itemsArray = [];
 
-  $("#add-hat").on("click", function(e) {
+  $("#add-hat").on("click", function (e) {
     itemsArray.push({
       item: "Hat",
       color: $("#hat-color").val(),
@@ -26,7 +33,7 @@ jQuery(document).ready(function($) {
     updateOrder(itemsArray);
   });
 
-  $("#add-tshirt").on("click", function(e) {
+  $("#add-tshirt").on("click", function (e) {
     itemsArray.push({
       item: "Shirt",
       color: $("#tshirt-color").val(),
@@ -36,7 +43,7 @@ jQuery(document).ready(function($) {
     updateOrder(itemsArray);
   });
 
-  $("#add-magnet").on("click", function(e) {
+  $("#add-magnet").on("click", function (e) {
     itemsArray.push({
       item: "Magnet",
       cost: 3
@@ -44,7 +51,7 @@ jQuery(document).ready(function($) {
     updateOrder(itemsArray);
   });
 
-  $(".store__ordered-items").on("click", ".store__remove-item-btn", function(
+  $(".store__ordered-items").on("click", ".store__remove-item-btn", function (
     e
   ) {
     itemsArray.splice(e.currentTarget.dataset["itemNum"], 1);
@@ -92,20 +99,31 @@ jQuery(document).ready(function($) {
 
                     </div>  
                     
-                    <button class='store__remove-item-btn' data-item-num=${i}>-</button>
+                    <button class='store__remove-item-btn' data-item-num=${i}><i class="fas fa-minus-circle"></i></button>
 
             </li>
             `);
     }
 
-    $(".store__total-cost").text(`Total Cost: ${totalCost}`);
+    $(".store__total-cost").text(`Total Cost: $${totalCost}`);
   }
 
-  $(".store__submit-btn").on("click", function(e) {
-    // console.log(itemsArray);
-    let emailMsg = '';
+  $(".store__submit-btn").on("click", function (e) {
+
+    e.preventDefault();
+
+    if (itemsArray.length === 0) {
+      alert('There are no items in your order.')
+      return;
+    } else if ($('.store__name-input').val() === '' || $('.store__email-input').val() === '') {
+      alert('Please fill out both the name and email fields.')
+      return;
+    }
+
+    let emailMsg = `ORDER FROM: ${$('.store__name-input').val()}\nEMAIL: ${$('.store__email-input').val()}\nORDER COMMENTS: ${$('.store__comment-input').val()} \n`
+
     for (let i = 0; i < itemsArray.length; i++) {
-        emailMsg += `ITEM NAME: ${itemsArray[i].item} ITEM DETAILS: ${itemsArray[i].size} ${itemsArray[i].color} ITEM COST: ${itemsArray[i].cost} \n`
+      emailMsg += `\nITEM NAME: ${itemsArray[i].item} ${itemsArray[i].size ? 'ITEM SIZE: ' + itemsArray[i].size : ''} ${itemsArray[i].color ? 'ITEM COLOR: ' + itemsArray[i].color : ''} ITEM COST: ${itemsArray[i].cost}\n`
     }
     var data = {
       action: "mail_before_submit",
@@ -117,8 +135,8 @@ jQuery(document).ready(function($) {
     jQuery.post(
       window.location.origin + "/wp-admin/admin-ajax.php",
       data,
-      function(response) {
-        console.log("Got this from the server: " + response);
+      function (response) {
+        // console.log(response);
       }
     );
   });

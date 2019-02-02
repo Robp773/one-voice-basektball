@@ -1,3 +1,13 @@
+.intro-bg-image {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(156, 19, 20, .85), rgba(156, 19, 20, .85)), url("/wp-content/themes/basketball-theme/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .intro {
     height: 50vh;
     width: 100vw;
@@ -5,11 +15,22 @@
     position: relative;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $color-secondary;
+
+    @include respond(tab-land) {
+        height: 40vh;
+    }
+
+    @include respond(tab-port) {
+        height: 35vh;
+    }
+
+    @include respond(phone) {
+        height: 30vh;
+    }
 
     &__h1 {
         color: whitesmoke;
-        font-size: 8rem;
+        font-size: 11rem;
         width: fit-content;
         z-index: 9999;
         position: absolute;
@@ -19,59 +40,121 @@
         padding: 2rem 0;
         padding: 0;
         margin: 0;
+
+        @include respond(tab-land) {
+            font-size: 10rem;
+        }
+
+        @include respond(phone) {
+            font-size: 8rem;
+        }
     }
 
-    &__bg-image {
-        transform: scale(1.05);
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-image: url("/wp-content/themes/basketball-theme/images/background.jpg ");
-        filter: blur(7px);
-    }
+    &__header-word {
+        display: inline-block;
+        animation: return-from-translateY 1.5s ease-in-out forwards;
+        opacity: 0;
 
-    &__darken {
-        height: 100%;
-        width: 100%;
-        z-index: 999;
-        background: rgba(0, 0, 0, 0.2);
-        position: absolute;
-        top: 0;
+        &--1 {
+            transform: translateY(-500px);
+        }
+
+        &--2 {
+            transform: translateY(500px);
+
+            @include respond(tab-port) {
+                transform: translateY(-500px);
+            }
+        }
+
+        &--3 {
+            transform: translateY(-500px);
+
+            @include respond(tab-port) {
+                display: block;
+                transform: translateY(500px);
+
+            }
+        }
     }
 }
 
 .about {
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
-    // color: whitesmoke;
-    padding: 5rem 0;
-    background: whitesmoke;
-    // background: $color-tertiary;
-    // border-top: 3px solid $color-secondary;
-    // border-bottom: 3px solid $color-secondary;
-    // border-bottom: 3px solid $color-secondary;
+    background: white;
+    padding: 7rem 0;
+
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+
+    @include respond(tab-land) {
+        padding-bottom: 2.5rem;
+    }
+
+    @include respond(phone) {
+        clip-path: none;
+        padding: 1rem 0;
+    }
+
+    &__image {
+        width: 40%;
+
+        @include respond(tab-land) {
+            max-width: 35%;
+            padding-right: .5rem;
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
 
     &__content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @include respond(tab-land) {
+            padding: .5rem;
+        }
+
+        @include respond(phone) {
+            padding: .25rem;
+        }
     }
 
     &__heading {
         font-size: 6rem;
         text-align: center;
+
+        @include respond(tab-land) {
+            padding: 0;
+        }
+
+        @include respond(phone) {
+            font-size: 5rem;
+        }
     }
 
     &__snippet {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 2rem auto;
         max-width: 75ch;
         font-style: italic;
+        padding: 1rem 2rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+            margin: 2rem;
+        }
+
+        @include respond(phone) {
+            margin: 1rem;
+            font-size: 2.5rem;
+        }
     }
 
     &__learn-more {
@@ -83,73 +166,158 @@
         outline: none;
         border-radius: 100px;
         background: $color-primary;
+        text-decoration: none;
+        transition: .5s background, color, border;
+        border: 5px solid transparent;
+        box-shadow: 0 .5rem 2rem $color-tertiary;
+
+        @include respond(phone) {
+            padding: 1rem 2rem;
+        }
+
+        &:hover {
+            background: whitesmoke;
+            border: 5px solid $color-primary;
+            color: $color-primary;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
     }
 }
 
 .updates {
-    padding-top: 5rem;
-    background: $color-primary;
-    clip-path: polygon(0% 15%, 100% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%, );
-    border-top: 2px solid $color-secondary;
-    border-bottom: 2px solid $color-secondary;
-    margin-top: -3%;
+    padding: 1rem;
+    min-height: 50vh;
+    position: relative;
 
+    &__centered-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        @include respond(tab-port){
+            position: static;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+        }
+    }
 
     &__primary-heading {
-        // background: whitesmoke;
         color: whitesmoke;
-        font-size: 6.5rem;
+        font-size: 7rem;
         padding: 0;
-        margin: auto;
+        margin: 0 auto .5rem auto;
         text-align: center;
+        z-index: 999;
+        border-bottom: 3px solid $color-secondary;
+        width: fit-content;
+
+        @include respond(tab-land) {
+            font-size: 6.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 6rem;
+            border: none;
+        }
     }
 
     &__posts-parent {
         display: flex;
         justify-content: space-around;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
+
+        @include respond(phone) {
+            border-top: 2px solid $color-secondary;
+        }
     }
 
     &__container {
+        z-index: 999;
         display: flex;
         flex-direction: column;
         width: 33.33%;
-        padding: 3rem 0;
+        padding: 1rem;
         text-decoration: none;
         color: whitesmoke;
         transition: all .25s;
-        border-right: 5px solid transparent;
-        border-left: 5px solid transparent;
-        border-top: 5px solid transparent;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-top: 2px solid transparent;
         transition: .5s all;
+        margin: .5rem auto;
 
-        &:hover {
-            background: whitesmoke;
-            color: $color-tertiary;
-            border-right: 2px solid $color-secondary;
-            border-left: 2px solid $color-secondary;
-            border-top: 2px solid $color-secondary;
-            transform: scale(1.1);
-
+        &:hover .u-expand-border {
+            animation: expanding-border .5s ease-in-out forwards;
         }
 
-        &:hover>h2 {}
+        &:hover {
+            background: rgba(246, 220, 58, .2);
+        }
+
+        @include respond(tab-port) {
+            width: 95%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 0 .25rem;
+
+            &:not(:last-child) {
+                border-bottom: 2px solid $color-secondary;
+            }
+        }
     }
 
     &__heading {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         margin: 1rem auto;
+
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 4rem;
+            margin: 0 auto;
+        }
     }
 
     &__date {
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
 
     &__content {
         display: block;
         padding: 0 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+            padding-bottom: .5rem;
+        }
     }
 }

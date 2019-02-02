@@ -24,6 +24,18 @@
         & > a:visited{
             color: whitesmoke;
         }
-      
+
+        @include respond(tab-land){
+            font-size: 3rem;
+        }
+
+        @include respond(phone){
+            font-size: 2rem;
+            margin: 0 .25rem;
+        }
+        @include respond(small-phone) {
+            font-size: 1.89rem;
+            margin: 0 .25rem;
+        }
     }
 }

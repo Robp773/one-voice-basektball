@@ -2,10 +2,16 @@
   &__drill-parent {
     margin: 1rem auto;
     padding-top: 1rem;
-    border-top: 3px solid $color-secondary;
+    background: white;
+    padding: 2rem;
+    border-right: 3px solid $color-primary;
+    border-left: 3px solid $color-primary;
+    border: 2px solid $color-primary;
+
+    // border-top: 3px solid $color-secondary;
 
     &:last-child {
-      border-bottom: 3px solid $color-secondary;
+      // border-bottom: 3px solid $color-secondary;
     }
   }
 
@@ -14,10 +20,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    font-weight: bold;
 
-    & > div {
+
+    &>div {
       margin-left: 1rem;
       color: $color-primary;
+      font-weight: bold;
     }
   }
 
@@ -31,8 +40,8 @@
   border: 3px dashed $color-tertiary;
   padding: 3rem;
   background: rgba(246, 220, 58, 0.6);
+
   &__single-warm-up {
     padding: 1rem;
-    // border-top: 3px solid $color-tertiary;
   }
 }

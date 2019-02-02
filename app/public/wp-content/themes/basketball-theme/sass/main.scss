@@ -4,18 +4,17 @@
 @import 'base/base';
 @import 'base/utilities';
 
+@import 'base/animations';
+
 @import 'layout/nav';
 @import 'layout/footer';
 
 @import 'pages/homepage';
+
 @import 'pages/about';
 @import 'pages/drill-type';
 @import 'pages/single-drill-type';
 @import 'pages/notes';
 @import 'pages/forms';
 @import 'pages/store';
-
-
-
-
-
+@import 'pages/calendar';

@@ -1,0 +1,180 @@
+<!-- <div class="form-page">
+
+
+<form class='form-page__form ' id="applicationForm" name="applicationForm">
+<img class='form-page__logo' id="headerImg" src="<?php echo get_template_directory_uri(); ?>/images/ovb-logo.png">
+
+<fieldset>
+        
+        <div class="form-page__label-input">
+            <label for='name'>Applicant Name</label>
+            <input id='name' type='text'>
+        </div>
+
+        <div class="form-page__label-input">   
+            <label for='date'>Birth Date</label>
+            <input id='date' type='text'>
+        </div>
+    
+        <div class="form-page__label-input">
+            <label for='parent'>Parent/Guardian Name</label>
+            <input id='parent' type='text'>
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='school'>School</label>
+            <input id='school' type='text'>
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='grade'>Grade</label>
+            <input id='grade' type='number'>
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='email'>Email Address</label>
+            <input id='email' type='email'>
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='street'>Street Address</label>
+            <input id='street' type='text'> 
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='city'>City</label>
+            <input id='city' type='text'>
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='zipcode'>Zipcode</label>
+            <input id='zipcode' maxlength="5">
+        </div>
+        
+        <div class="form-page__label-input">
+            <label for='phone-1'>Phone Number</label>
+            <input id='phone-1'  type='tel'>
+        </div>
+     
+        <div class="form-page__label-input">
+            <label for='cell-1'>Cell #1</label>
+            <input id='cell-1' type='tel'>
+        </div>
+        
+        <div class="form-page__label-input">
+            <label for='cell-2'>Cell #2</label>
+            <input id='cell-2' type='tel'>
+        </div>
+ 
+        <div class="form-page__label-input">
+            <label for='alt-phone-1'>Alt Phone #1</label>
+            <input id='alt-phone-1' type='tel'>   
+        </div>
+   
+        <div class="form-page__label-input">
+            <label for='alt-phone-2'>Alt Phone #2</label>
+            <input id='alt-phone-2' type='tel'> 
+        </div>
+       
+        <div class="form-page__label-input">
+             <label for='emergency-name'>Emergency Contact Name</label>
+            <input id='emergency-name' type='text'>
+        </div>
+       
+        <div class="form-page__label-input">
+            <label for='relationship'>Relationship to Applicant</label>
+            <input id='relationship' type='text'> 
+        </div>
+ 
+        <div class="form-page__label-input">
+            <label for='emergency-phone'>Emergency Contact Phone</label>
+            <input id='emergency-phone' type='tel'>  
+        </div>
+     
+        <div class="form-page__label-input">
+            <label for='emergency-alt-phone'>Emergency Alt Phone #1</label>
+            <input id='emergency-alt-phone' type='tel'> 
+        </div>
+       
+        <div class="form-page__label-input">
+            <label for='emergency-alt-phone-2'>Emergency Alt Phone #2</label>
+            <input id='emergency-alt-phone-2' type='tel'>  
+        </div>
+
+        <div class="form-page__label-input">
+            <label for='family-physician'>Family Physician</label>
+            <input id='family-physician' type='text'>
+        </div>
+       
+        <div class="form-page__label-input">
+            <label for='physician-phone'>Physician Phone</label>
+            <input id='physician-phone' type='tel'> 
+        </div>
+        
+    </fieldset>
+
+    <div>
+        <h3 class='page__h3 page-break-2' >RELEASE OF LIABILITY FOR A MINOR</h3>
+
+
+        <p class='form-page__paragraph' >I, the parent or guardian of the above named player, a minor, agree that I will abide by the rules and regulations
+            of the basketball program in which we participate. In consideration of the applicant’s participation in the sport and
+            its programs, I, intending to be legally bound, do hereby release and indemnify the One Voice Basketball Association
+            Inc. (OVBA) its members, coaches, representatives, directors and officers from any and all claims, liabilities, causes
+            of action and dangers arising out of, or in connection with the Applicant’s participation in the programs of the OVBA,
+            Inc.
+        </p>
+
+        <p class='form-page__paragraph'>Is the Participant taking any medication that would limit safe participation in the activities and/or does the Participant
+            have any physical or mental condition, physical disability, or any other condition that would limit safe participation
+            in the activities?
+        </p>
+
+        <div class="form-page__label-radio">
+            <label class="radioLabel" for='disabilityTrue'>Yes</label>
+            <input id="disabilityTrue" name='disability' type="radio">
+            <label class="radioLabel" for='disabilityFalse'>No</label>
+            <input id='disabilityFalse' name='disability' type="radio">  
+        </div>
+      
+        <p class='form-page__paragraph'>Does the Participant have any medical information which he or she believes One Voice Basketball should have and know
+            about in the event of medical emergency (including any allergies, reactions to medication)?
+        </p>
+
+        <div class="form-page__label-radio">
+            <div> 
+                <label class="radioLabel" for='medicalTrue'>Yes</label>
+                <input id="medicalTrue" name='medical' type="radio"> 
+                <label class="radioLabel" for='medicalFalse'>No</label>
+                <input id='medicalFalse' name='medical' type="radio">
+            </div>
+           
+            <textarea class='form-page__medical-reason-input' id="medicalReasonInfo" placeholder="If yes, please explain as fully as you deem advisable." rows='7' cols='50'></textarea>
+           
+        </div>
+
+        <h3 class='page__h3 page-break'>AUTHORIZATION FOR EMERGENCY MEDICAL TREATMENT</h3>
+
+        <p class='form-page__paragraph'>The signature below shall be evidence of the parent / guardian of the Applicant named above for emergency medical treatment
+            of any injury or condition during participation in the One Voice Basketball Association Inc. activities. In the event
+            that reasonable attempts to contact me or the emergency contact above are unsuccessful, this shall further serve as authorization
+            for the provision of medical services to the Applicant that are deemed medically necessary for the transport, stabilization
+            and treatment of any such injury or condition.</p>
+
+        <div class="form-page__label-input">
+            <label>Signed by Parent/Guardian</label>
+            <div><i>Please sign after printing</i></div>
+
+            <input class="signatureInput" disabled type="text">
+        </div>
+
+        <div class="form-page__label-input">
+            <label>Print Name of Parent/Guardian</label>
+            <input class="signatureInput"  type="text">
+        </div>
+        
+        <button id='print-btn' class="form-page__print-btn">Print</button>
+</form>
+</div> -->
+
+

@@ -13,29 +13,11 @@
     </div>
 
 <?php 
-  $warmUpDrills = new WP_Query(
-    array(
-    'post_type' => 'drill',
-    'meta_query' => array(
-        // check to see if drill_category field is related to current
-        // drill type page
-        array(
-          'key' => 'drill_category',
-          'compare' => 'LIKE',
-          'value' => '"' . get_the_ID() . '"'
-        ),
-        // make sure that the drill is not tagged as a warm up drill
-        array(
-            'key' => 'drill_sub_category',
-            'value' => '12',
-            'compare' => 'LIKE',
-            )
-      )
-    )
-);
+
     $basicDrills = new WP_Query(
         array(
         'post_type' => 'drill',
+        'posts_per_page' => '-1',
         'meta_query' => array(
             // check to see if drill_category field is related to current
             // drill type page
@@ -62,6 +44,7 @@
     $intermediateDrills = new WP_Query(
         array(
         'post_type' => 'drill',
+        'posts_per_page' => '-1',
         'meta_query' => array(
             // check to see if drill_category field is related to current
             // drill type page
@@ -88,6 +71,7 @@
     $advancedDrills = new WP_Query(
         array(
         'post_type' => 'drill',
+        'posts_per_page' => '-1',
         'meta_query' => array(
             // check to see if drill_category field is related to current
             // drill type page
@@ -110,22 +94,7 @@
         )
         )
     ); 
-
-
-    if($warmUpDrills->have_posts()){ ?>
-    <div class="warm-ups">
-        <h3 class='page__h3 page__h3--top-margin'>Warm Ups</h3>
-       <?php  while($warmUpDrills->have_posts()) {
-        $warmUpDrills->the_post(); ?>
-        <div class="warm-ups__single-warm-up">
-            <h4 class='page__h4'><?php the_title(); ?></h4>
-            <div><?php echo get_field('drill_instructions');?></div>
-        </div>
-
-
-        <?php } ?>
-    </div>
-    <?php } ?>
+ ?>
     
     <div class="drills-list">
         <h2 class='page__h2'>Drills</h2>
@@ -148,9 +117,15 @@
                 // array of all tag ids
                 $tagArray = get_field('drill_sub_category');
                 // list each tag
-                foreach($tagArray as $tag){ ?> 
-                    <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?></span> 
-                <?php } ?>
+                foreach($tagArray as $tag){ 
+                
+                if($tag === end($tagArray)) { ?> 
+                <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?></span> 
+                <?php  }
+                else { ?>
+                        <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?>,</span> 
+                <?php }      
+            } ?>
 
                 <div><?php echo get_field('drill_difficulty');?></div>
             </div>
@@ -173,13 +148,19 @@ if($intermediateDrills->have_posts()){ ?>
 
         <div class="drills-list__title-info-container">
 
-            <?php
-            // array of all tag ids
-            $tagArray = get_field('drill_sub_category');
-            // list each tag
-            foreach($tagArray as $tag){ ?> 
+        <?php
+                // array of all tag ids
+                $tagArray = get_field('drill_sub_category');
+                // list each tag
+                foreach($tagArray as $tag){ 
+                
+                if($tag === end($tagArray)) { ?> 
                 <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?></span> 
-            <?php } ?>
+                <?php  }
+                else { ?>
+                        <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?>,</span> 
+                <?php }      
+            } ?>
 
             <div><?php echo get_field('drill_difficulty');?></div>
         </div>
@@ -200,13 +181,19 @@ if($advancedDrills->have_posts()){ ?>
 
             <div class="drills-list__title-info-container">
 
-                <?php
+            <?php
                 // array of all tag ids
                 $tagArray = get_field('drill_sub_category');
                 // list each tag
-                foreach($tagArray as $tag){ ?> 
-                    <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?></span> 
-                <?php } ?>
+                foreach($tagArray as $tag){ 
+                
+                if($tag === end($tagArray)) { ?> 
+                <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?></span> 
+                <?php  }
+                else { ?>
+                        <span class='drills-list__tag u-ital'><?php echo get_term($tag)->name ?>,</span> 
+                <?php }      
+            } ?>
 
                 <div><?php echo get_field('drill_difficulty');?></div>
             </div>
@@ -214,11 +201,13 @@ if($advancedDrills->have_posts()){ ?>
             <div class='drills-list__instructions'><?php echo get_field('drill_instructions');?></div>
         </div>
 <?php } }
-// } 
+
 ?>
 
 </div>
 
 </div>
+
+<?php get_footer(); ?>
 </div>
 

@@ -1,23 +1,37 @@
-.notes {}
-
 .note {
-    transition: .5s;
-    border: 3px solid transparent;
+    transition: .5s all;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    margin: 1rem auto;
+    background: white;
+    text-align: center;
+    padding: 1rem 2rem;
 
     &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 .25rem 2rem black;
+        background: rgba(156, 19, 20, .9);
+        color: whitesmoke;
+        border-left: 4px solid $color-secondary;
+        border-right: 4px solid $color-secondary;
+    }
 
-        border: 3px solid $color-tertiary;
-        background: rgba(246, 220, 58, .6);
+    &:hover>* .page__h3 {
+        border-bottom: 3px solid $color-secondary;
     }
 
     &__date {
         text-align: center;
     }
 
-    &__link{
+    &__link {
         text-decoration: none;
-        display: inline-block;  
-        padding: 2rem; 
+        display: inline-block;
+        padding: .5rem;
     }
 
+    &__excerpt {
+        text-align: left;
+        width: 100%;
+    }
 }

@@ -8,11 +8,20 @@
     ?>
       <div class="note">
         <a class='note__link' href="<?php the_permalink(); ?>">
-        <h3 class='page__h3'><?php the_title(); ?></h3>
-        <div class='note__date'><?php echo get_field('date'); ?></div>
-        <div class='note__excerpt'><?php the_excerpt($more_link_text, 20); ?></div>
+          <h3 class='page__h3 page__h3--yellow-border'><?php the_title(); ?></h3>
+          <div class='note__date'><?php echo get_field('date'); ?></div>
+          <div class='note__excerpt'><?php the_excerpt($more_link_text, 20); ?></div>
         </a>
       </div>  
     <?php } ?>
+
+      <div class="page__pagination-container">
+        <?php wp_pagenavi(); ?>
+      </div>
+
   </div>
+  
+
+
+  <?php get_footer(); ?>
 </div>

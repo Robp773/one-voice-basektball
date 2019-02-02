@@ -1,5 +1,4 @@
 .drill-types {
-   
 
     &__intro {
 
@@ -11,24 +10,30 @@
     &__five-points {
         margin: 3rem auto;
 
-
         & * ul {
             text-align: center;
             text-decoration: none;
             list-style: none;
         }
+
+
     }
 
-    &__ul-parent {        
-        background: rgba(246, 220, 58, .6);
+    &__ul-parent {
+        background: rgba(246, 220, 58, .33);
         padding: 2rem;
-
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1rem;
+
+        @include respond(phone) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    &__parent{
+    &__parent {
         margin: 3rem auto;
     }
 }

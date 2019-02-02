@@ -13,10 +13,14 @@
     <nav class='nav'>
 
         <ul class='nav__ul'>
-            <li class="nav__li"> <a href="<?php echo site_url('/about') ?>">About</a> </li>
+
+            <?php if(!is_front_page()){ ?>
+            <li class="nav__li"><a href="<?php echo site_url('/') ?>">Home</a> </li>
+            <?php } ?>
+            <li class="nav__li"><a href="<?php echo site_url('/about') ?>">About</a> </li>
             <li class="nav__li"><a href="<?php echo get_post_type_archive_link('drill-type'); ?>">Drills</a></li>
             <li class="nav__li"><a href="<?php echo site_url('/forms') ?>">Forms</a></li>
-            <li class="nav__li">Calendar</li>
+            <li class="nav__li"><a href="<?php echo site_url('/calendar') ?>">Calendar</a></li>
             <li class="nav__li"><a href="<?php echo site_url('/store') ?>">Store</a></li>
             <li class="nav__li"> <a href="<?php echo get_post_type_archive_link('note'); ?>">Notes</a></li>
         </ul>

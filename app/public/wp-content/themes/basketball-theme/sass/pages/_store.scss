@@ -1,61 +1,128 @@
 .store {
     text-align: center;
 
+    @include respond(tab-port) {
+        &>.page__h2 {
+            font-size: 8rem !important;
+        }
+
+        &>* .page__h3 {
+            font-size: 6rem;
+        }
+    }
+
     &__item-choice-parent {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
     }
 
     &__item-container {
         margin: 1rem auto;
 
+        @include respond(tab-port) {
+            height: fit-content;
+        }
     }
 
     &__item {
         font-size: 2rem;
         display: inline-block;
-        height: 65vh;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: auto .5rem;
 
+        @include respond(tab-port) {
+            height: fit-content;
+            font-size: 4rem;
+            margin: 2rem auto;
+        }
+    }
+
+    &__item-content {
+
+        @include respond(tab-port) {}
+    }
+
+    &__item-cost {
+        @include respond(tab-port) {
+
+            margin-bottom: 1rem;
+        }
     }
 
     &__item-image {
         width: 30rem;
-        height: 25rem;
+        height: 30rem;
         transition: .25s all;
-        border: 2px solid $color-tertiary;
+        border: 3px solid $color-tertiary;
+        cursor: pointer;
 
-        &:hover {
-            transform: scale(1.5);
-            border: 2px solid $color-tertiary;
+        @include respond(tab-port) {
+            width: 50rem;
+            height: 40rem;
+        }
+
+        @include respond(phone) {
+            width: 95vw;
+            height: 30rem;
+        }
+
+        &--modal {
+            min-width: 200%;
+            max-height: 95vh;
+            border: 3px solid $color-tertiary;
         }
     }
 
     &__add-item-btn {
-        padding: 1rem 2rem;
-        border-radius: 100px;
-        border: 1px solid $color-primary;
-        outline: none;
-        background: whitesmoke;
-        box-shadow: 0 .25rem .75rem $color-tertiary;
-        transition: .25s all;
-        font-size: 2.5rem;
-
-        &:hover {
-            color: whitesmoke;
-            background: $color-primary;
-        }
-
-        &:active {
-            box-shadow: none;
+        @include respond(tab-port) {
+            font-size: 4rem;
         }
     }
 
-    &__ordered-items {}
+    &__remove-item-btn {
+        @include respond(tab-port) {
+            font-size: 4rem;
+        }
+    }
+
+    &__add-item-btn,
+    &__remove-item-btn {
+        background: none;
+        border: none;
+        outline: none;
+
+        &:hover>i {
+            color: $color-primary;
+            transform: scale(1.25);
+        }
+
+        &>i {
+            color: $color-tertiary;
+            background: transparent;
+            transition: all .25s;
+        }
+    }
+
+    &__order-summary {
+        font-size: 3rem;
+
+        @include respond(tab-port) {
+            font-size: 3.5rem;
+        }
+    }
+
+    &__order-header {
+        @include respond(tab-port) {
+            font-size: 6rem;
+        }
+    }
 
     &__list-item {
         list-style: none;
@@ -64,17 +131,23 @@
         align-items: center;
         margin: auto;
 
+        @include respond(tab-port) {
+            margin: 1rem auto;
+        }
     }
 
     &__single-item {
         display: inline-block;
         display: flex;
         padding: 1rem 0;
-        margin: 1rem auto;
-        border: 2px solid $color-tertiary;
+        margin: .25rem auto;
+        background: white;
         width: 85%;
         position: relative;
 
+        @include respond(tab-port) {
+            margin: 0 1rem 0 0;
+        }
     }
 
     &__item-name,
@@ -87,9 +160,12 @@
         font-size: 3rem;
         color: $color-primary;
         font-weight: bold;
-
         width: 25%;
         text-align: left;
+
+        @include respond(tab-port) {
+            font-size: 4rem;
+        }
     }
 
     &__item-details {
@@ -101,16 +177,10 @@
         background: $color-secondary;
         text-align: right;
         margin-left: auto;
-    }
 
-    &__remove-item-btn {
-        padding: .25rem 1rem;
-        margin: .25rem;
-        text-align: left;
-        background: white;
-        border: 1px solid $color-tertiary;
-
-
+        @include respond(phone) {
+            height: fit-content;
+        }
     }
 
     &__total-cost {
@@ -120,6 +190,11 @@
         background: $color-secondary;
         width: fit-content;
         margin: auto;
+
+        @include respond(tab-port) {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__name-input,
@@ -137,6 +212,10 @@
 
     &__comment-input {
         width: 65%;
+
+        @include respond(phone) {
+            width: 95vw;
+        }
     }
 
     &__submit-btn {
@@ -155,9 +234,21 @@
             color: $color-tertiary;
         }
 
-        &:active{
+        &:active {
             box-shadow: none;
+        }
+
+        @include respond(tab-port) {
+            font-size: 4.5rem;
         }
     }
 
+    &__mobile-input-parent {
+        display: inline-block;
+
+        // width: fit-content;
+        @include respond(phone) {
+            display: block;
+        }
+    }
 }

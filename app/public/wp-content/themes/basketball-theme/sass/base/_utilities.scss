@@ -33,6 +33,14 @@
     font-size: 2.25rem;
 }
 
-.u-inline-block{
+
+
+.u-inline-block {
     display: inline-block;
+}
+
+.u-expand-border {
+    // animation: expanding-border 1s ease-in-out;
+    border-bottom: 2px solid transparent;
+    margin: auto;
 }

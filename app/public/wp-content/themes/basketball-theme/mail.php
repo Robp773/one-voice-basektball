@@ -8,5 +8,4 @@
 
     echo mail($to, $subject, $message, $headers);     
 
-
 ?>

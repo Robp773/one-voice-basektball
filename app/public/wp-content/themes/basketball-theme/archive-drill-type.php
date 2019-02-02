@@ -49,7 +49,6 @@ get_header(); ?>
         
     </div>
    
-
     <p class='page__paragraph'>
         Basketball has changed. Effective offensive philosophy can no longer 
         rely simply on ball movement, player movement and screening. 
@@ -115,6 +114,9 @@ get_header(); ?>
 
 </div>
 </div>
+
+<?php get_footer(); ?>
+
 </div>
 
 

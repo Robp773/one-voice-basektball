@@ -8,7 +8,7 @@
  get_header(); ?>
 <div class="page__bg" style="background-image: linear-gradient(rgba(156, 19, 20, .85), rgba(156, 19, 20, .85)), url('<?php echo bloginfo('template_directory') ?>/images/team-2016.jpg')">     
 
- <div class='about-page'>
+ <div class='page__content'>
 
     <section class="principles-section">
         <h1 class='page__h1'>ONE VOICE BASIC PRINCIPLES</h1> 
@@ -77,7 +77,8 @@
         </div>
 
     </section>
-</div>
+</div> 
+
+<?php get_footer(); ?>
 </div>
 
- <?php get_footer(); ?>

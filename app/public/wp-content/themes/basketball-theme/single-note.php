@@ -8,7 +8,7 @@
 
             <div class="page__title-date-container">
                 <h2 class="page__h2"><?php the_title(); ?></h2>
-                <h4 class="page__h4"><?php echo get_field('date') ?></h4>
+                <h4 class="page__h4 note-h4"><?php echo get_field('date') ?></h4>
             </div>
               
             <div class="page__thumbnail-container">
@@ -17,8 +17,9 @@
 
             <div class="u-standardize-content"><?php the_content(); ?></div>
         </div>
+        
+        <?php get_footer(); ?>
     </div>
    
 <?php } ?>
 
-<?php get_footer(); ?>

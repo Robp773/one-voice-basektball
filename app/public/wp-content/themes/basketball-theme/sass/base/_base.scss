@@ -7,44 +7,73 @@
   color: inherit;
 }
 
-.hidden{
+
+
+img.alignright {float:right; margin:1em 0 1em 1em}
+img.alignleft {float:left; margin:1em 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+.hidden {
   display: none;
 }
 
-@media print {
+#my_email_ajax_nonce {
+  display: none;
+}
 
-  .form-page__form{
-    width: 100% !important;
-    border: 0 !important;
-  }
 
-  .nav ,
-  .footer,
-  #print-btn {
-    display: none !important;
-  }
-
-  .form-page__label-input * {
-    width: 100% !important;
-  }
-  .form-page__paragraph{
-    width: 95% !important;
-  }
-  .form-page__medical-reason-input{
-    width: 100% !important;
-  }
-
-  #headerImg {
-    height: 15vh;
-  }
-
-  .page-break {
-    margin-top: 30rem !important;
-  }
-  .page-break-2{
-    margin-top: 5rem !important;
+p > img{
+  @include respond(phone){
+    display: block !important;
+    width: 100%;
+    height: 20%;
+    margin: auto !important;
+    margin-bottom: 1rem !important;
   }
 }
+li {
+  @include respond(phone){
+    text-align: center;
+  }
+}
+
+// @media print {
+
+//   .form-page__form{
+//     width: 100% !important;
+//     border: 0 !important;
+//   }
+
+//   .nav ,
+//   .footer,
+//   #print-btn {
+//     display: none !important;
+//   }
+
+//   .form-page__label-input * {
+//     width: 100% !important;
+//   }
+//   .form-page__paragraph{
+//     width: 95% !important;
+//   }
+//   .form-page__medical-reason-input{
+//     width: 100% !important;
+//   }
+
+//   #headerImg {
+//     height: 15vh;
+//   }
+
+//   .page-break {
+//     margin-top: 30rem !important;
+//   }
+//   .page-break-2{
+//     margin-top: 5rem !important;
+//   }
+// }
 
 html {
   background: whitesmoke;
@@ -69,7 +98,6 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   box-sizing: border-box;
-  // background: whitesmoke;
   color: #515151;
 }
 
@@ -78,13 +106,62 @@ body {
 }
 
 .page {
+
+  &__modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .85);
+    z-index: 999;
+  }
+
+  &__modal {
+    max-width: 75ch;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  &__modal-exit {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 0;
+    outline: none;
+    color: $color-secondary;
+    width: 5rem;
+    height: 5rem;
+    transition: all .25s;
+    cursor: pointer;
+
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+
   &__bg {
-    padding: 2rem 0;
+    padding-top: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+
+    &--no-padding {
+      padding: 0;
+    }
+
+    @include respond(tab-port) {
+      padding: 0;
+      height: fit-content;
+    }
 
     &--right {
       background-position: right;
@@ -104,8 +181,26 @@ body {
     font-size: 2.25rem;
     background: whitesmoke;
     margin: auto;
+    margin-bottom: 2rem;
     padding: 1rem 3rem;
     line-height: 135%;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    @include respond(phone) {
+      padding: .5rem;
+    }
+
+    &--wrapped {
+      width: fit-content;
+      padding: 0;
+      margin-bottom: 2rem;
+      max-width: initial;
+    }
 
     & * ul {
       margin: auto auto 2rem auto;
@@ -114,6 +209,17 @@ body {
 
     & * p {
       margin-bottom: 2rem;
+    }
+  }
+
+  &__h1,
+  &__h2,
+  &__h3,
+  &__h4 {
+    @include respond(tab-port) {
+      line-height: initial;
+      margin: .5rem auto !important;
+      padding: 0 !important;
     }
   }
 
@@ -129,6 +235,10 @@ body {
     font-size: 5rem;
     color: $color-primary;
     margin: 1.25rem;
+
+    &--white {
+      color: whitesmoke;
+    }
   }
 
   &__h3 {
@@ -153,8 +263,22 @@ body {
   &__paragraph {
     margin-bottom: 2rem;
   }
+
+  &__pagination-container {
+    text-align: center;
+  }
 }
 
 .border-top {
   border-top: 3px solid $color-secondary;
+}
+
+.footer--bottom {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+}
+
+.note-h4 {
+  margin-top: 3rem;
 }
